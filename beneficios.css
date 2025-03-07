@@ -1,0 +1,182 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==================== ESTILO GENERAL ==================== */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ==================== HEADER ==================== */
+header {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre los elementos del menú */
+    margin-top: 10px; /* Agrega más espacio debajo del título */
+}
+
+nav ul li {
+    margin: 0 20px; /* Espaciado horizontal entre los elementos */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Asegura buena legibilidad */
+    letter-spacing: 1.5px; /* Espacia más las letras */
+    padding: 5px 10px; /* Agrega espacio dentro de los enlaces */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8b400; /* Efecto hover para mejor interacción */
+}
+
+
+/* ==================== SECCIÓN HERO ==================== */
+.hero-benefits {
+    width: 100vw;
+    height: 400px;
+    background: url('img/fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-benefits::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+    font-size: 18px;
+}
+
+/* ==================== SECCIÓN BENEFICIOS ==================== */
+.benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+}
+
+.benefit {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.benefit img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.benefit h3 {
+    color: #002147;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.benefit img {
+    width: 25px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto 10px; 
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2)); 
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover img {
+    transform: scale(1.1); 
+}
+
+
+/* ==================== SECCIÓN INFO ADICIONAL ==================== */
+.additional-info {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.additional-info h2 {
+    color: #002147;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.additional-info p {
+    font-size: 18px;
+    width: 80%;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.additional-info img{
+    width: 20%; 
+    max-width: 500px; 
+    height: 300px; 
+    display: block; 
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* ==================== FOOTER ==================== */
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
